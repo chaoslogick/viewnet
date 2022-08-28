@@ -1,9 +1,9 @@
 {
   "build": {
-    "beforeBuildCommand": "cd frontend && trunk build",
-    "beforeDevCommand": "cd frontend && trunk serve",
+    "distDir": "../front-end/dist",
     "devPath": "http://localhost:8080",
-    "distDir": "../frontend/dist",
+    "beforeDevCommand": "cd frontend && trunk serve",
+    "beforeBuildCommand": "cd frontend && trunk build",
     "withGlobalTauri": true
   },
   "package": {
@@ -57,7 +57,7 @@
       {
         "fullscreen": false,
         "height": 600,
-        "resizable": true,
+        "resizable": false,
         "title": "Viewnet",
         "width": 800
       }
